@@ -1,0 +1,54 @@
+Navegación:
+
+Distintas páginas en main / Infinita completa / Infinita desplegables
+
+Portada:
+
+	Fondo + texto
+	Imagen + texto
+	Carrusel con texto (requiere buenas fotos)
+
+Menú:
+	En el encabezado/fijado
+	Lateral fijado
+
+Cuerpo:
+	Tienda:
+		Una serie de galerías con información desplegable.
+		
+		Cuadro desplegable por categorías
+		Navegable desde menú
+
+
+About us es secundario, abajo del todo o bajo el header sobre la tienda
+
+Almeraya:
+Sobrecargan con relleno (seguridad, galería de boda)
+El menú en movil me gusta
+
+
+
+Yo haría una web infinita con desplegable.
+
+Encabezado con logo de empresa, contacto e imagen
+Menú lateral "Empresa, Contacto, Tienda" y redes sociales, En móviles encoger a desplegable + redes
+La tienda un cuadro con encabezado distintas categorías desplegando galería según producto
+Footer de contacto, mapa depende. Breve descripción, desarollo y contacto con dirección
+
+Posibilidades:
+Galería en la introducción con reportaje de eventos. Bueno para el pijoterío
+
+
+
+IDEAS:
+	Reseñas de google
+	Sin menú y vision por scrollable
+	Título ESCUDERO EVENTOS
+	Mantenemos desplegables
+	Categorías de la tienda como en al web original carpas y jaimas = carpas
+
+Categorías
+	Iamgen presetnación
+	Presentación de la empresa
+	Tienda
+	Footer
