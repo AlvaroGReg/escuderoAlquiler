@@ -8,15 +8,23 @@
     --primary-color: #9bbb58;
     --accent-color: #a4d735;
     --font-color: #000000;
-    --footer-font: #000;
+    --footer-font: #8d101f;
+    --base-margin: 20px;
 }
 
 p,h1,h2{
     color: var(--font-color)
 }
 
+h2{
+    font-size: 2.2em;
+}
+p{
+    font-size: 1.4em;
+}
+
 section{
-    margin-top: 100px;
+    margin-top: var(--base-margin);
 }
 
 /*SCROLLBAR*/
@@ -34,6 +42,10 @@ section{
     background-color: var(--accent-color);
 }
 /*HEADER*/
+header{
+    width: 100%;
+    max-width: 2080;
+}
 
 header>.headercontact{
     display: flex;
@@ -56,10 +68,13 @@ header>.headercontact>.headeritem>p{
 
 header>.mainheader{
     display: flex;
+    height: 400px;
     align-items: center;
-    height: 500px;
     overflow: hidden;
-    background: url(../res/header\ img.jpeg);
+    background: url(../res/headerimg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
 }
 
 header>.mainheader>.headerdiv>h1{
@@ -75,105 +90,92 @@ header>.mainheader>.background{
 }
 
 /*MAIN*/
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main{
+    width: 90%;
+    max-width: 1920px;
+}
+
+.sectiontitle{
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    font-size: 2.5em;
+}
+/*ABOUTUS*/
+
+.aboutus{
+    display: flex;
+    width: 90%;
+    justify-content: center;
+}
+.aboutus>.abouttext{
+    width: 30%;
+}
 /*TIENDA*/
-/*SILLAS*/
-.sillas{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.sillas>.itemscontainer{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    overflow: auto;
-}
 
-.sillas>.itemscontainer>article{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: solid 5px var(--primary-color);
-}
-.sillas>.itemscontainer>article>img{
-    height: 350px;
-    width: 300px;
-}
-
-/*MESAS*/
-.mesas{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.mesas>.mesascontainer{
-    display: flex;
-    width: 100%;
-    overflow: hidden;
-    justify-content: space-evenly;
-}
-
-.mesas>.mesascontainer>article{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-.mesas>.mesascontainer>article>img{
-    height: 200px;
-}
-
-/*CARPAS*/
-
-.carpas{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.carpas>.sectiontitle{
+.shoptitle{
+    cursor: pointer;
     background-color: var(--primary-color);
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.carpas>.sectiontitle:hover{
+.shoptitle:hover{
     background-color: var(--accent-color)
 }
 
-.carpas>.sectiontitle>.bx{
-    font-size: 1.8em;
+.shoptitle>.bx{
+    font-size: 2.3em;
 }
 
-.carpas>.itemscontainer{
-    display: none;
+.sectiontienda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     overflow: hidden;
 }
 
-.show{
-    display: grid !important;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-row-gap: 20px;
+.sectiontienda>.itemscontainer{
+    display: none;
+    overflow: hidden;
+    width: 100%;
+    align-items: center;
 }
 
-.carpas>.itemscontainer>article{
-    width: 100%;
+.show{
+    display: flex !important;
+    flex-wrap: wrap;
+}
+
+.shopitem{
+    width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.carpas>.itemscontainer>article>img{
-    width: 260px;
-    height: 260px;
+.shopitem>img{
+    width: auto;
+    height: 250px;
 }
+/*SILLAS*/
+
+/*MESAS*/
+
+/*CARPAS*/
 
 /*FOOTER*/
 
 footer{
+    width: 100%;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -181,17 +183,17 @@ footer{
     color: var(--footer-font);
 }
 
-footer>.footermain{
+.footermain{
     display: flex;
     justify-content: space-evenly;
     width: 100%;
 }
-footer>.footermain>.footercol{
+.footermain>.footercol{
     width: 50%;
     margin-top: 10px;
 }
 
-footer>.footermain>.footercol>.contact{
+.footermain>.footercol>.contact{
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -199,25 +201,27 @@ footer>.footermain>.footercol>.contact{
     justify-content: center;
 }
 
-footer>.footermain>.footercol>.contact>h2{
+.footermain>.footercol>.contact>h2{
     color: #000;
 }
 
-footer>.footermain>.footercol>.contact>ul>li>p{
+.footermain>.footercol>.contact>ul>li>p{
     color: #000;
 }
-footer>.footermain>.footercol>iframe{
+
+.footermain>.footercol>iframe{
     width: 90%;
     height: 30vh;
 }
 
-footer>.footersign{
+.footersign{
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: var(--base-margin);
     align-items: center;
     width: 100%;
 }
-footer>.footersign>img{
+
+.footersign>img{
     width: 40px;
 }

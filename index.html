@@ -1,196 +1,294 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Escudero Eventos - Alquiler de material para eventos.</title>
-    <link rel="stylesheet" href="css/mystyle.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!--HEADER-->
-    <header>
-      <div class="headercontact">
-        <div class="headeritem">
-          <i class="bx bx-phone"></i>
-          <p>+34 659669051</p>
-        </div>
-        <div class="headeritem">
-          <i class="bx bx-envelope"></i>
-          <p>alquileres@escuderoeventos.com</p>
-        </div>
-      </div>
-      <div class="mainheader">
-        <div class="headerdiv">
-          <img src="res/JElogo.jpg" alt="logo empresa" />
-          <h1>ESCUDERO EVENTOS</h1>
-        </div>
-      
-        <img src="res/header img.jpeg" class="background" alt="">
-      </div>
-    </header>
-    <!--NAV-->
-    <nav></nav>
-    <!--MAIN-->
-    <main>
-      <!--SILLAS-->
-      <section class="sillas">
-        <div class="sectiontitle">
-            <h2>SILLAS</h2>
-        </div>
-        <div class="itemscontainer">
-        <article class="silla">
-          <img
-            src="res/sillas/silla-azul-plastico.webp"
-            alt="Silla azul de plástico"
-          />
-          <p>Silla azul</p>
-        </article>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge"
+		/>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Escudero Eventos - Alquiler de material para eventos.</title>
+		<link
+			rel="stylesheet"
+			href="css/mystyle.css"
+		/>
+		<link
+			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<!--HEADER-->
+		<header>
+			<div class="headercontact">
+				<div class="headeritem">
+					<i class="bx bx-phone"></i>
+					<p>+34 659669051</p>
+				</div>
+				<div class="headeritem">
+					<i class="bx bx-envelope"></i>
+					<p>alquileres@escuderoeventos.com</p>
+				</div>
+			</div>
+			<div class="mainheader">
+				<div class="headerdiv">
+					<img
+						src="res/je-logo.jpg"
+						alt="logo empresa"
+					/>
+					<h1>ESCUDERO EVENTOS</h1>
+				</div>
+			</div>
+		</header>
+		<!--MAIN-->
+		<main>
+			<!--ABOUTUS-->
+			<section class="aboutus">
+				<div class="abouttext">
+					<div class="sectiontitle">
+						<h2>Quiénes somos?</h2>
+					</div>
+					<p>
+						Escudero Eventos experiencia 30 años trabajamos en el
+						mundo empresa con amplia experiencia Lorem ipsum dolor
+						sit amet consectetur adipisicing elit. Facilis hic rerum
+						cumque ipsum expedita. Aliquam odit minus quos aut
+						possimus iure sint corrupti deserunt? Incidunt, quisquam
+						commodi? Accusantium, quas repellat.
+					</p>
+				</div>
+				<div class="aboutimg">
+					<img
+						src="res/je-logo.jpg"
+						alt="Imagen About Us"
+					/>
+				</div>
+			</section>
 
-        <article class="silla">
-          <img
-            src="res/sillas/silla-blanca-madera.jpg"
-            alt="Silla blanca de madera"
-          />
-          <p>Silla blanca interiores</p>
-        </article>
+			<!-- CATALOGUE -->
+			<section class="catalogue">
+				<div class="sectiontitle">
+					<h1>Nuestro catálogo</h1>
+				</div>
+			</section>
+			<!--SILLAS-->
+			<section class="sectiontienda sillas">
+				<div
+					class="shoptitle"
+					onclick="openSection(0)"
+				>
+					<h2>Sillas</h2>
+					<i class="bx bx-chevrons-down"></i>
+				</div>
 
-        <article class="silla">
-          <img
-            src="res/sillas/silla-blanca-maderanegra.jpg"
-            alt="Silla blanca madera negra"
-          />
-          <p>Silla blanca exteriores</p>
-        </article>
+				<div
+					class="itemscontainer"
+					id="sectionSillas"
+				>
+					<article class="shopitem">
+						<img
+							src="res/sillas/silla-azul-plastico.webp"
+							alt="Silla azul"
+						/>
+						<p>Silla azul</p>
+					</article>
 
-        <article class="silla">
-          <img
-            src="res/sillas/silla-marron-madera.jpg"
-            alt="Silla marrón madera básica"
-          />
-          <p>Silla marón</p>
-        </article>
+					<article class="shopitem">
+						<img
+							src="res/sillas/silla-blanca-madera.jpg"
+							alt="Silla madera"
+						/>
+						<p>Silla blanca madera</p>
+					</article>
 
-        <article class="silla">
-          <img
-            src="res/sillas/silla-verde-tapizada.webp"
-            alt="Silla verde tapizada"
-          />
-          <p>Silla verde elegante</p>
-        </article>
-    </div>
-      </section>
-      <!--MESAS-->
-      <section class="mesas">
-        <h2>ALQUILERES DE MESAS</h2>
-        <div class="mesascontainer">
-          <article class="mesa">
-            <img
-              src="res/mesas/mesa-blanca-circular.webp"
-              alt="Mesa blanca circular"
-            />
-            <p>Mesa blanca circular</p>
-          </article>
-          <article class="mesa">
-            <img src="res/mesas/mesa-madera-cruzada.jpg" alt="Mesa cruzada" />
-            <p>Mesa madera cruzada</p>
-          </article>
-          <article class="mesa">
-            <img src="res/mesas/mesa-merendero.jpg" alt="Mesa merendero" />
-            <p>Mesa de merendero</p>
-          </article>
-        </div>
-      </section>
+					<article class="shopitem">
+						<img
+							src="res/sillas/silla-blanca-maderanegra.jpg"
+							alt="Silla negra madera"
+						/>
+						<p>Silla negra madera</p>
+					</article>
 
-      <!--CARPAS-->
+					<article class="shopitem">
+						<img
+							src="res/sillas/silla-marron-madera.jpg"
+							alt="Silla madera marrón"
+						/>
+						<p>Silla madera marrón</p>
+					</article>
 
-      <section class="carpas">
-        <div class="sectiontitle" onclick="openSection()">
-          <h2>CARPAS Y JAIMAS</h2>
-          <i class='bx bx-chevrons-down'></i>
-        </div>
+					<article class="shopitem">
+						<img
+							src="res/sillas/silla-verde-tapizada.webp"
+							alt="Silla verde tapizada"
+						/>
+						<p>Silla verde tapizada</p>
+					</article>
+				</div>
+			</section>
+			<!--MESAS-->
+			<section class="sectiontienda mesas">
+				<div
+					class="shoptitle"
+					onclick="openSection(1)"
+				>
+					<h2>Mesas</h2>
+					<i class="bx bx-chevrons-down"></i>
+				</div>
 
-        <div class="itemscontainer" id="sectionCarpas">
+				<div
+					class="itemscontainer"
+					id="sectionMesas"
+				>
+					<article class="shopitem">
+						<img
+							src="res/mesas/mesa-blanca-circular.webp"
+							alt="Mesa blanca circular"
+						/>
+						<p>Mesa blanca circular</p>
+					</article>
 
-          <article class="carpa">
-            <img src="res/carpas/carpa-abierta.jpg" alt="Carpa sin paredes" />
-            <p>Carpa abierta con suelo</p>
-          </article>
+					<article class="shopitem">
+						<img
+							src="res/mesas/mesa-madera-cruzada.jpg"
+							alt="Mesa madera cruzada"
+						/>
+						<p>Mesa madera cruzada</p>
+					</article>
 
-          <article class="carpa">
-            <img src="res/carpas/carpa-burbuja.jpg" alt="Carpa burbuja" />
-            <p>Carpa abierta burbuja</p>
-          </article>
+					<article class="shopitem">
+						<img
+							src="res/mesas/mesa-merendero.jpg"
+							alt="Mesa merendero"
+						/>
+						<p>Mesa merendero</p>
+					</article>
+				</div>
+			</section>
 
-          <article class="carpa">
-            <img src="res/carpas/carpa-completa.jpeg" alt="Carpa estándar" />
-            <p>Carpa pared cerrada</p>
-          </article>
+			<!--CARPAS-->
 
-          <article class="carpa">
-            <img
-              src="res/carpas/carpa-grande-ventanal.jpg"
-              alt="Carpa ventanal"
-            />
-            <p>Carpa con ventanales</p>
-          </article>
+			<section class="sectiontienda carpas">
+				<div
+					class="shoptitle"
+					onclick="openSection(2)"
+				>
+					<h2>Carpas</h2>
+					<i class="bx bx-chevrons-down"></i>
+				</div>
 
-          <article class="carpa">
-            <img src="res/carpas/carpa-pequeña.jpg" alt="Carpa pequeña" />
-            <p>Carpa pequeña</p>
-          </article>
+				<div
+					class="itemscontainer"
+					id="sectionCarpas"
+				>
+					<article class="shopitem">
+						<img
+							src="res/carpas/carpa-abierta.jpg"
+							alt="Carpa sin paredes"
+						/>
+						<p>Carpa abierta con suelo</p>
+					</article>
 
-          <article class="carpa">
-            <img src="res/carpas/carpa-plegable.jpg" alt="Carpa plegable" />
-            <p>Carpa pequeña fácil montaje</p>
-          </article>
+					<article class="shopitem">
+						<img
+							src="res/carpas/carpa-burbuja.jpg"
+							alt="Carpa burbuja"
+						/>
+						<p>Carpa abierta burbuja</p>
+					</article>
 
-          <article class="carpa">
-            <img src="res/carpas/jaima-grande.jpg" alt="Jaima abierta" />
-            <p>Jaima abierta</p>
-          </article>
+					<article class="shopitem">
+						<img
+							src="res/carpas/carpa-completa.jpeg"
+							alt="Carpa estándar"
+						/>
+						<p>Carpa pared cerrada</p>
+					</article>
 
-          <article class="carpa">
-            <img src="res/carpas/jaima-mediana.jpg" alt="Jaimas mediana" />
-            <p>Jaima con ventanales</p>
-          </article>
-        </div>
-      </section>
-    </main>
-    <!--FOOTER-->
-    <footer>
-      <div class="footermain">
-        <div class="footercol">
-          <div class="contact" name="contact">
-            <h2>Contacto</h2>
-            <ul>
-              <li><p>C/Rio Miño 56</p></li>
-              <li><p>Vícar, Almería</p></li>
-              <li><p>047378 España</p></li>
-              <li><p>alquileres@escuderoeventos.com</p></li>
-              <li><p>juan@escuderoeventos.com</p></li>
-              <li><p>+34 659669051</p></li>
-            </ul>
-          </div>
-        </div>
-        <div class="footercol">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3194.38638755608!2d-2.6272166847098455!3d36.80925997994662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd706e25c98becfd%3A0x79104909f076b48e!2sEscudero%20Eventos!5e0!3m2!1ses!2ses!4v1683530817427!5m2!1ses!2ses"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-      </div>
-      <div class="footersign">
-        <p>Escudero Eventos 2023</p>
-        <img src="res/agreglogo.png" alt="Logo agreg" />
-      </div>
-    </footer>
-  </body>
-  <script src="main.js"></script>
+					<article class="shopitem">
+						<img
+							src="res/carpas/carpa-grande-ventanal.jpg"
+							alt="Carpa ventanal"
+						/>
+						<p>Carpa con ventanales</p>
+					</article>
+
+					<article class="shopitem">
+						<img
+							src="res/carpas/carpa-pequeña.jpg"
+							alt="Carpa pequeña"
+						/>
+						<p>Carpa pequeña</p>
+					</article>
+
+					<article class="shopitem">
+						<img
+							src="res/carpas/carpa-plegable.jpg"
+							alt="Carpa plegable"
+						/>
+						<p>Carpa pequeña fácil montaje</p>
+					</article>
+
+					<article class="shopitem">
+						<img
+							src="res/carpas/jaima-grande.jpg"
+							alt="Jaima abierta"
+						/>
+						<p>Jaima abierta</p>
+					</article>
+
+					<article class="shopitem">
+						<img
+							src="res/carpas/jaima-mediana.jpg"
+							alt="Jaimas mediana"
+						/>
+						<p>Jaima con ventanales</p>
+					</article>
+				</div>
+			</section>
+		</main>
+		<!--FOOTER-->
+		<footer>
+			<div class="footermain">
+				<div class="footercol">
+					<div
+						class="contact"
+						name="contact"
+					>
+						<h3>Contacto</h3>
+						<ul>
+							<li><p>C/Rio Miño 56</p></li>
+							<li><p>Vícar, Almería</p></li>
+							<li><p>047378 España</p></li>
+							<li><p>alquileres@escuderoeventos.com</p></li>
+							<li><p>juan@escuderoeventos.com</p></li>
+							<li><p>+34 659669051</p></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footercol resenas">
+					<h3>Reseñas</h3>
+				</div>
+				<div class="footercol">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3194.38638755608!2d-2.6272166847098455!3d36.80925997994662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd706e25c98becfd%3A0x79104909f076b48e!2sEscudero%20Eventos!5e0!3m2!1ses!2ses!4v1683530817427!5m2!1ses!2ses"
+						allowfullscreen=""
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"
+					></iframe>
+				</div>
+			</div>
+			<div class="footersign">
+				<p>Escudero Eventos 2023</p>
+				<img
+					src="res/agreglogo.png"
+					alt="Logo agreg"
+				/>
+			</div>
+		</footer>
+	</body>
+	<script src="main.js"></script>
 </html>
