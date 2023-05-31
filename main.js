@@ -12,3 +12,5 @@ const openSection = (index) => {
     sectionsArr[index].classList.add("show")
   }
 }
+
+/* TODO: TURN ICONS ON CLICK */
