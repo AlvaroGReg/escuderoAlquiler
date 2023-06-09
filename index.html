@@ -45,17 +45,16 @@
 		</header>
 		<!--MAIN-->
 		<main>
-
 			<!-- FLOAT CONTACT -->
 			<section class="floatcontact">
 				<a href="tel:+34659669051">
 					<div class="contactdiv contactphone">
-						<i class='bx bx-phone'></i>
+						<i class="bx bx-phone"></i>
 					</div>
 				</a>
 				<a href="mailto:alquileres@escuderoeventos.com">
 					<div class="contactdiv contactmail">
-						<i class='bx bx-envelope' ></i>
+						<i class="bx bx-envelope"></i>
 					</div>
 				</a>
 			</section>
@@ -85,188 +84,187 @@
 			<!-- GALLERY -->
 
 			<section class="gallery">
-				<img src="res/pruebas/gallery.png" alt="">
+				<img
+					src="res/pruebas/gallery.png"
+					alt=""
+				/>
 			</section>
 
 			<!-- CATALOGUE -->
-			<section class="catalogue">
-				<div class="sectiontitle">
-					<h1>Nuestro catálogo</h1>
+			<section id="catalogue" class="catalogue">
+				<div
+					class="category"
+					onclick="showCategory(1)"
+				>
+					Sillas y mesas
+				</div>
+				<div
+					class="category"
+					onclick="showCategory(2)"
+				>
+					Mantelería
+				</div>
+				<div
+					class="category"
+					onclick="showCategory(3)"
+				>
+					Vajilla y cubertería
+				</div>
+				<div
+					class="category"
+					onclick="showCategory(4)"
+				>
+					Carpas
+				</div>
+				<div
+					class="category"
+					onclick="showCategory(5)"
+				>
+					Galería de eventos
 				</div>
 			</section>
-			<!--SILLAS-->
-			<section class="sectiontienda sillas">
+
+			<section id="contenedor-imagenes">
 				<div
-					class="shoptitle"
-					onclick="openSection(0)"
+					id="images-category-1"
+					class="images"
 				>
-					<h2>Sillas</h2>
-					<i class="bx bx-chevrons-down"></i>
-				</div>
-
-				<div
-					class="itemscontainer"
-					id="sectionSillas"
-				>
-					<article class="shopitem">
+					<div class="item">
 						<img
-							src="res/sillas/silla-azul-plastico.webp"
-							alt="Silla azul"
-						/>
-						<p>Silla azul</p>
-					</article>
-
-					<article class="shopitem">
-						<img
-							src="res/sillas/silla-blanca-madera.jpg"
-							alt="Silla madera"
-						/>
-						<p>Silla blanca madera</p>
-					</article>
-
-					<article class="shopitem">
-						<img
-							src="res/sillas/silla-blanca-maderanegra.jpg"
-							alt="Silla negra madera"
-						/>
-						<p>Silla negra madera</p>
-					</article>
-
-					<article class="shopitem">
-						<img
-							src="res/sillas/silla-marron-madera.jpg"
-							alt="Silla madera marrón"
-						/>
-						<p>Silla madera marrón</p>
-					</article>
-
-					<article class="shopitem">
-						<img
-							src="res/sillas/silla-verde-tapizada.webp"
-							alt="Silla verde tapizada"
-						/>
-						<p>Silla verde tapizada</p>
-					</article>
-				</div>
-			</section>
-			<!--MESAS-->
-			<section class="sectiontienda mesas">
-				<div
-					class="shoptitle"
-					onclick="openSection(1)"
-				>
-					<h2>Mesas</h2>
-					<i class="bx bx-chevrons-down"></i>
-				</div>
-
-				<div
-					class="itemscontainer"
-					id="sectionMesas"
-				>
-					<article class="shopitem">
-						<img
-							src="res/mesas/mesa-blanca-circular.webp"
-							alt="Mesa blanca circular"
+							src="/res/sillas_mesas/mesa-blanca-circular.webp"
+							alt="Imagen 1"
 						/>
 						<p>Mesa blanca circular</p>
-					</article>
-
-					<article class="shopitem">
+					</div>
+					<div class="item">
 						<img
-							src="res/mesas/mesa-madera-cruzada.jpg"
-							alt="Mesa madera cruzada"
+							src="/res/sillas_mesas/mesa-madera-cruzada.jpg"
+							alt="Imagen 2"
 						/>
 						<p>Mesa madera cruzada</p>
-					</article>
-
-					<article class="shopitem">
+					</div>
+					<div class="item">
 						<img
-							src="res/mesas/mesa-merendero.jpg"
-							alt="Mesa merendero"
+							src="res/sillas_mesas/silla-azul-plastico.webp"
+							alt="Imagen 2"
 						/>
-						<p>Mesa merendero</p>
-					</article>
-				</div>
-			</section>
-
-			<!--CARPAS-->
-
-			<section class="sectiontienda carpas">
-				<div
-					class="shoptitle"
-					onclick="openSection(2)"
-				>
-					<h2>Carpas</h2>
-					<i class="bx bx-chevrons-down"></i>
+						<p>Silla azul plástico</p>
+					</div>
+					<div class="item">
+						<img
+							src="res/sillas_mesas/silla-blanca-madera.jpg"
+							alt="Imagen 3"
+						/>
+						<p>Silla blanca madera</p>
+					</div>
 				</div>
 
 				<div
-					class="itemscontainer"
-					id="sectionCarpas"
+					id="images-category-2"
+					class="images"
 				>
-					<article class="shopitem">
+					<div class="item">
+						<img
+							src="res/manteleria/mantel_servilleta_bnw.jpg"
+							alt="Imagen 4"
+						/>
+						<p>Mantel y servilleta BNW</p>
+					</div>
+					<div class="item">
+						<img
+							src="res/manteleria/mantel_servilleta_wnb.jpg"
+							alt="Imagen 5"
+						/>
+						<p>Mantel y servilleta WNB</p>
+					</div>
+					<div class="item">
+						<img src="res/manteleria/cubresillas.jpg" /> <p>Cubresillas</p>
+					</div>
+					
+				</div>
+
+				<div
+					id="images-category-3"
+					class="images"
+				>
+					<div class="item">
+						<img
+							src="res/vajilla_cuberteria/cuberteria_madera.jpg"
+							alt="Imagen 6"
+						/>
+						<p>Cubertería madera</p>
+					</div>
+					<div class="item">
+						<img
+							src="res/vajilla_cuberteria/cuberteria_negra.jpg"
+							alt="Imagen 7"
+						/>
+						<p>Cubertería negra</p>
+					</div>
+					<div class="item">
+						<img
+							src="res/vajilla_cuberteria/plato_borde_azul.webp"
+						/>
+						<p>Plato borde azul</p>
+					</div>
+					<div class="item">
+						<img
+							src="res/vajilla_cuberteria/platos_rosas.webp"
+							alt="Imagen 7"
+						/>
+						<p>Platos rosas</p>
+					</div>
+					<div class="item">
+						<img src="res/vajilla_cuberteria/copas_vino.jpg" />
+						<p>Copas de vino</p>
+					</div>
+				</div>
+
+				<div
+					id="images-category-4"
+					class="images"
+				>
+					<div class="item">
 						<img
 							src="res/carpas/carpa-abierta.jpg"
-							alt="Carpa sin paredes"
+							alt="Imagen 8"
 						/>
-						<p>Carpa abierta con suelo</p>
-					</article>
-
-					<article class="shopitem">
+						<p>Carpa abierta</p>
+					</div>
+					<div class="item">
 						<img
 							src="res/carpas/carpa-burbuja.jpg"
-							alt="Carpa burbuja"
+							alt="Imagen 9"
 						/>
-						<p>Carpa abierta burbuja</p>
-					</article>
+						<p>Carpa burbuja</p>
+					</div>
+				</div>
 
-					<article class="shopitem">
+				<div
+					id="images-category-5"
+					class="images"
+				>
+					<div class="item">
 						<img
-							src="res/carpas/carpa-completa.jpeg"
-							alt="Carpa estándar"
+							src="res/eventos/banquete_estilo.jpg"
+							alt="Imagen 10"
 						/>
-						<p>Carpa pared cerrada</p>
-					</article>
-
-					<article class="shopitem">
+						<p>Banquete estiloso</p>
+					</div>
+					<div class="item">
 						<img
-							src="res/carpas/carpa-grande-ventanal.jpg"
-							alt="Carpa ventanal"
+							src="res/eventos/banquete_formal.jpg"
+							alt="Imagen 11"
 						/>
-						<p>Carpa con ventanales</p>
-					</article>
-
-					<article class="shopitem">
+						<p>Banquete formal</p>
+					</div>
+					<div class="item">
 						<img
-							src="res/carpas/carpa-pequeña.jpg"
-							alt="Carpa pequeña"
+							src="res/eventos/banquete_sobrio.jpg"
+							alt="Imagen 12"
 						/>
-						<p>Carpa pequeña</p>
-					</article>
-
-					<article class="shopitem">
-						<img
-							src="res/carpas/carpa-plegable.jpg"
-							alt="Carpa plegable"
-						/>
-						<p>Carpa pequeña fácil montaje</p>
-					</article>
-
-					<article class="shopitem">
-						<img
-							src="res/carpas/jaima-grande.jpg"
-							alt="Jaima abierta"
-						/>
-						<p>Jaima abierta</p>
-					</article>
-
-					<article class="shopitem">
-						<img
-							src="res/carpas/jaima-mediana.jpg"
-							alt="Jaimas mediana"
-						/>
-						<p>Jaima con ventanales</p>
-					</article>
+						<p>Banquete sobrio</p>
+					</div>
 				</div>
 			</section>
 		</main>

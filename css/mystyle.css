@@ -1,202 +1,197 @@
-*{
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+* {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
 }
 
-:root{
-    --primary-color: #9bbb58;
-    --accent-color: #a4d735;
-    --secondary-color: #8d101f;
-    --font-color: #000000;
-    --base-margin: 20px;
+:root {
+	--primary-color: #9bbb58;
+	--accent-color: #a4d735;
+	--secondary-color: #8d101f;
+	--font-color: #000;
+	--base-margin: 20px;
 }
 
-p,h1,h2{
-    color: var(--font-color)
+p,
+h1,
+h2 {
+	color: var(--font-color);
 }
 
-h2{
-    font-size: 2.2em;
+h2 {
+	font-size: 2.2em;
 }
-p{
-    font-size: 1.4em;
+p {
+	font-size: 1.4em;
 }
 
-section{
-    margin-top: var(--base-margin);
+section {
+	margin-top: var(--base-margin);
 }
 
 /*SCROLLBAR*/
 
 ::-webkit-scrollbar {
-    width: 12px;
-    background-color: #344c00;
-  }
-  
-::-webkit-scrollbar-thumb {
-   background-color: var(--primary-color);
+	width: 12px;
+	background-color: #344c00;
 }
 
-::-webkit-scrollbar-thumb:hover{
-    background-color: var(--accent-color);
+::-webkit-scrollbar-thumb {
+	background-color: var(--primary-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: var(--accent-color);
 }
 /*HEADER*/
-header{
-    width: 100%;
-    max-width: 2080;
+header {
+	width: 100%;
+	max-width: 2080;
 }
 
-header>.headercontact{
-    display: flex;
-    justify-content: space-between;
-    padding-left: 5px;
-    padding-right: 5px;
-    background-color: var(--primary-color);
+header > .headercontact {
+	display: flex;
+	justify-content: space-between;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color: var(--primary-color);
 }
 
-header>.headercontact>.headeritem{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
+header > .headercontact > .headeritem {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
 }
 
-header>.headercontact>.headeritem>p{
-    color: #000;
+header > .headercontact > .headeritem > p {
+	color: #000;
 }
 
-header>.mainheader{
-    display: flex;
-    height: 400px;
-    align-items: center;
-    overflow: hidden;
-    background: url(../res/headerimg.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: center;
+header > .mainheader {
+	display: flex;
+	height: 400px;
+	align-items: center;
+	overflow: hidden;
+	background: url(../res/headerimg.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-y: center;
 }
 
-header>.mainheader>.headerdiv>h1{
-    font-size: 4em;
-    color: var(--primary-color);
+header > .mainheader > .headerdiv > h1 {
+	font-size: 4em;
+	color: var(--primary-color);
 }
 
-header>.mainheader>.background{
-    position: absolute;
-    z-index: -1;
-    height: 100%;
-    min-width: 100%;
+header > .mainheader > .background {
+	position: absolute;
+	z-index: -1;
+	height: 100%;
+	min-width: 100%;
 }
 
 /*MAIN*/
 
-body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
-main{
-    width: 90%;
-    max-width: 1920px;
+main {
+	width: 90%;
+	max-width: 1920px;
 }
 
-.sectiontitle{
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    display: flex;
-    justify-content: center;
-    font-size: 2.5em;
+.sectiontitle {
+	background-color: var(--primary-color);
+	color: var(--secondary-color);
+	display: flex;
+	justify-content: center;
+	font-size: 2.5em;
 }
 
 /*FLOAT CONTACT*/
 
-.floatcontact{
-    position: fixed;
-    background-color: var(--accent-color);
-    left: 0;
+.floatcontact {
+	position: fixed;
+	background-color: var(--primary-color);
+	left: 0;
 }
 
-.contactdiv>.bx{
-    font-size: 50px;
-    color:var(--secondary-color);
+.contactdiv > .bx {
+	font-size: 50px;
+	color: var(--secondary-color);
 }
 /*ABOUTUS*/
 
-.aboutus{
-    display: flex;
-    width: 90%;
-    justify-content: center;
+.aboutus {
+	display: flex;
+	width: 90%;
+	justify-content: center;
 }
 
-.aboutus>.abouttext{
-    width: 30%;
-    height: 100%;
+.aboutus > .abouttext {
+	width: 30%;
+	height: 100%;
 }
 
-.aboutus>.aboutimg{
-    height: 100%;
+.aboutus > .aboutimg {
+	height: 100%;
 }
 
-.aboutus>.aboutimg>img{
-    height: 400px;
+.aboutus > .aboutimg > img {
+	height: 400px;
 }
 
 /* GALLERY */
 
-.gallery>img{
-    width: 90%;
+.gallery > img {
+	width: 90%;
 }
 /*TIENDA*/
 
-.shoptitle{
-    cursor: pointer;
+.catalogue{
     background-color: var(--primary-color);
-    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
-.shoptitle:hover{
-    background-color: var(--accent-color)
+.category {
+	display: inline-block;
+    padding: 10px;
+	cursor: pointer;
+    font-size: 1.6em;
 }
 
-.shoptitle>.bx{
-    font-size: 2.3em;
+.category:hover{
+    background-color: var(--accent-color);
 }
 
-.sectiontienda{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
+/*DESPLEGABLE*/
+.images {
+	display: none;
+	margin-top: 10px;
 }
 
-.sectiontienda>.itemscontainer{
-    display: none;
-    overflow: hidden;
-    width: 100%;
-    align-items: center;
-}
-
-.show{
-    display: flex !important;
+.images.active {
+	display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.shopitem{
-    width: 300px;
+.item{
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: hidden;
+    padding: 20px;
 }
 
-.shopitem>img{
-    width: 100%;
-    height: 250px;
+.item > img {
+	width: 200px;
+	height: 200px;
 }
+
 /*SILLAS*/
 
 /*MESAS*/
@@ -205,55 +200,55 @@ main{
 
 /*FOOTER*/
 
-footer{
-    width: 100%;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+footer {
+	width: 100%;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: var(--primary-color);
+	color: var(--secondary-color);
 }
 
-.footermain{
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
+.footermain {
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
 }
-.footermain>.footercol{
-    width: 50%;
-    margin-top: 10px;
-}
-
-.footermain>.footercol>.contact{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-left: 30%;
-    justify-content: center;
+.footermain > .footercol {
+	width: 50%;
+	margin-top: 10px;
 }
 
-.footermain>.footercol>.contact>h2{
-    color: #000;
+.footermain > .footercol > .contact {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-left: 30%;
+	justify-content: center;
 }
 
-.footermain>.footercol>.contact>ul>li>p{
-    color: #000;
+.footermain > .footercol > .contact > h2 {
+	color: #000;
 }
 
-.footermain>.footercol>iframe{
-    width: 90%;
-    height: 30vh;
+.footermain > .footercol > .contact > ul > li > p {
+	color: #000;
 }
 
-.footersign{
-    display: flex;
-    justify-content: center;
-    gap: var(--base-margin);
-    align-items: center;
-    width: 100%;
+.footermain > .footercol > iframe {
+	width: 90%;
+	height: 30vh;
 }
 
-.footersign>img{
-    width: 40px;
+.footersign {
+	display: flex;
+	justify-content: center;
+	gap: var(--base-margin);
+	align-items: center;
+	width: 100%;
+}
+
+.footersign > img {
+	width: 40px;
 }
