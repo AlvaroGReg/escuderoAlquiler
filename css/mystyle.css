@@ -2,12 +2,13 @@
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
+    text-decoration: none;
 }
 
 :root {
 	--primary-color: #9bbb58;
 	--accent-color: #a4d735;
-	--secondary-color: #8d101f;
+	--secondary-color: #a31324;
 	--font-color: #000;
 	--base-margin: 20px;
 }
@@ -49,7 +50,7 @@ header {
 	max-width: 2080;
 }
 
-header > .headercontact {
+.headercontact {
 	display: flex;
 	justify-content: space-between;
 	padding-left: 5px;
@@ -57,18 +58,23 @@ header > .headercontact {
 	background-color: var(--primary-color);
 }
 
-header > .headercontact > .headeritem {
+.headeritem {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	gap: 5px;
 }
 
-header > .headercontact > .headeritem > p {
+.headeritem > p {
 	color: #000;
 }
 
-header > .mainheader {
+.headeritem > .bx{
+    color: var(--secondary-color);
+}
+
+.mainheader {
+    position: relative;
 	display: flex;
 	height: 400px;
 	align-items: center;
@@ -79,12 +85,24 @@ header > .mainheader {
 	background-position-y: center;
 }
 
-header > .mainheader > .headerdiv > h1 {
-	font-size: 4em;
-	color: var(--primary-color);
+.mainheader > .headerdiv{
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
-header > .mainheader > .background {
+.mainheader > .headerdiv > h1 {
+    position: absolute;
+	font-size: 4em;
+	color: var(--primary-color);
+    background-color: rgba(252, 252, 252, 0.618);
+    right: 0;
+    bottom: 0;
+    border-radius: 5px 0 0 0;
+}
+
+
+.mainheader > .background {
 	position: absolute;
 	z-index: -1;
 	height: 100%;
@@ -164,8 +182,10 @@ main {
     font-size: 1.6em;
 }
 
-.category:hover{
+.category:hover,
+.category.active{
     background-color: var(--accent-color);
+    color: var(--secondary-color);
 }
 
 /*DESPLEGABLE*/
