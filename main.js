@@ -1,16 +1,12 @@
+var images = document.getElementsByClassName('images');
 
-const sectionSillas = document.getElementById("sectionSillas")
-const sectionMesas  = document.getElementById("sectionMesas")
-const sectionCarpas = document.getElementById("sectionCarpas")
-const sectionsArr   = [sectionSillas, sectionMesas, sectionCarpas]
+function showCategory(category) {
+  for (var i = 0; i < images.length; i++) {
 
-const openSection = (index) => {
-  
-  if (sectionsArr[index].classList.contains("show")) {
-    sectionsArr[index].classList.remove("show")
-  } else {
-    sectionsArr[index].classList.add("show")
+    if (images[i].id === 'images-category-' + category) {
+      images[i].classList.add('active');
+    } else {
+      images[i].classList.remove('active');
+    }
   }
 }
-
-/* TODO: TURN ICONS ON CLICK */
